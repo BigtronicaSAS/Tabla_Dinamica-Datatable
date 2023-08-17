@@ -1,0 +1,168 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100VH;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccionNema{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px
+}
+
+table.table-nemas {
+  background-color: #f5f5f5;
+  text-align: center;
+  border:none;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.img-nema{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 50px;
+}
+
+.img-nema img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+table.table-nemas td,
+table.table-nemas th {
+ padding: 10px;
+ text-align:center;
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ border:none;
+ transition: all 0.5s;
+}
+
+table.table-nemas thead th {
+    background-color: #094b8b;
+    border-bottom: solid 3px #03192e;
+    color: white;
+    text-shadow: none;
+    text-transform: capitalize;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
+table.table-nemas tr:nth-child(even){
+	background-color: #ddd;
+}
+
+table.table-nemas tr:hover td{
+	background-color: #03192e;
+	cursor:pointer;
+	color: white;
+}
+
+.view_mobile{
+  display: none;
+  width: 16px;
+}
+
+.view_mobile img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  filter: invert(1);
+}
+
+.view-nemas{
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #094b8b;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-nemas {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .view-nemas:hover {
+    background-color: #093156
+  }
+  .brotherproduct{
+    width: 40px;
+  }
+
+  .datasheetproduct{
+    width: 42px;
+  }
+  .brotherproduct:hover, .datasheetproduct:hover{
+    filter:saturate(0);
+  }
+
+@media (max-width: 360px) {
+  .responsiveTable{
+    display: none;
+  }
+
+  .view_nomobile{
+    display: none;
+  }
+
+  .view_mobile{
+    display: block;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .th-nema, .img-nema{
+    display: none;
+  } 
+}
+
+
+@media (max-width: 450px) {
+  table.table-nemas thead th {
+    font-size: 13.5px;
+}
+
+table.table-nemas td, table.table-nemas th {
+  padding: 5px;
+}
+
+}
+
+
+.moreInfo{
+  display: none;
+}
+
+
+#short_description_content a, .page-product-box .rte a {
+  color: black;
+  text-decoration: underline;
+}
