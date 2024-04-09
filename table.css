@@ -20,7 +20,7 @@ body{
 #seccionNema{
     display: flex;
     justify-content: center;
-    max-width: 1200px
+    
 }
 
 table.table-nemas {
