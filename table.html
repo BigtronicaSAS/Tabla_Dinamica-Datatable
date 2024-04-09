@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TableNema</title>
   <link rel="stylesheet" href="/table.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script defer src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
 </head>
 
 <body>
@@ -76,6 +79,49 @@
       </tbody>
     </table>
   </div>
+
+  <script type="text/javascript">
+   $(function() {
+    console.log('corriendo datatable');
+        $('#example').DataTable({
+            select: {
+                //style: 'multi'
+            },
+            responsive: true,
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla =(",
+                "sInfo": "Registros del _START_ al _END_ de _TOTAL_ registros",
+                "sInfoEmpty": "Registros del 0 al 0 de 0 registros",
+                "sInfoFiltered": "-",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad"
+                }
+            },
+            "bDestroy": true
+            
+        });
+    });
+
+  </script>
 </body>
 
 </html>
